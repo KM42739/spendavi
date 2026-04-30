@@ -1,0 +1,20 @@
+{
+  "name": "spendavi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Spendavi monorepo for web, mobile and backend schema.",
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "build:web": "npm --workspace apps/web run build",
+    "dev:mobile": "npm --workspace apps/mobile run start",
+    "ios": "npm --workspace apps/mobile run ios",
+    "android": "npm --workspace apps/mobile run android"
+  },
+  "workspaces": [
+    "apps/web",
+    "apps/mobile"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
